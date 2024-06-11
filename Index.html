@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+        .profile, .skills, .projects, .contact {
+            background: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 1rem;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .skills ul li {
+            background: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            border-radius: 3px;
+        }
+        .projects .project {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .projects .project div {
+            flex: 1;
+            margin: 1rem;
+            background: #eee;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .projects .project div img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form input, .contact form textarea {
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact form button {
+            padding: 1rem;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <div class="container">
+        <section class="profile">
+            <img src="profile.jpg" alt="Profile Picture">
+            <h2>Sboniso Ngcamu</h2>
+            <p>Welcome to my portfolio! I am a Software Developer with a passion for creating amazing projects. Below you will find information about my skills, projects, and how to contact me.</p>
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>React</li>
+                <li>C#</li>
+                <li>SQL</li>
+                <li>SQL Server</li>
+            </ul>
+        </section>
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <div>
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project One</h3>
+                    <p>Description of your project. Explain what it does, the technologies used, and any interesting features.</p>
+                    <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+                </div>
+                <div>
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project Two</h3>
+                    <p>Description of your project. Explain what it does, the technologies used, and any interesting features.</p>
+                    <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+                </div>
+                <div>
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>Project Three</h3>
+                    <p>Description of your project. Explain what it does, the technologies used, and any interesting features.</p>
+                    <a href="https://github.com/yourusername/project3" target="_blank">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <h2>Contact</h2>
+            <form action="https://formspree.io/f/{your_form_id}" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
